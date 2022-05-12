@@ -1,17 +1,17 @@
-SIMPLE CRUD API WITH DJANGO REST FRAMEWORK
-Django REST framework is a powerful and flexible toolkit for building Web APIs.
+# SIMPLE CRUD API WITH DJANGO REST FRAMEWORK
+# Django REST framework is a powerful and flexible toolkit for building Web APIs.
 
 Requirements
 Python 3.6
 Django 3.2
 Django REST Framework
 Installation
-After you cloned the repository, you want to create a virtual environment, so you have a clean python installation. You can do this by running the command
+# After you cloned the repository, you want to create a virtual environment, so you have a clean python installation. You can do this by running the command
 
 python -m venv env
-After this, it is necessary to activate the virtual environment, you can get more information about here https://docs.python.org/3/tutorial/venv.html
+# After this, it is necessary to activate the virtual environment, you can get more information about here https://docs.python.org/3/tutorial/venv.html
 
-You can install all the required dependencies by running
+# You can install all the required dependencies by running
 
 pip install -r requirements/dev.txt
 
@@ -19,7 +19,7 @@ Structure
 
 In a RESTful API, endpoints (URLs) define the structure of the API and how end users access data from our application using the HTTP methods - GET, POST, PUT, DELETE. Endpoints should be logically organized around collections and elements, both of which are resources.
 
-In our case, we have one single resource, movies, so we will use the following URLS - /movies/ and /movies/<id> for collections and elements, respectively:
+In our case, we have one single resource, drinks, so we will use the following URLS - /drinks/ and /drinks/<id> for collections and elements, respectively:
 
 Endpoint	HTTP Method	CRUD Method	Result
 drinks	GET	READ	Get all drink
@@ -32,16 +32,16 @@ We can test the API using Postman
 
 Postman is available on the web at go.postman.co/home
 
-prometheus
-Python prometheus library for django and django rest framework. This helps in monitoring the application on a granular level.
-You can customize which part of the application you want to monitor. Through this you can monitor a REST API
+# prometheus
+# Python prometheus library for django and django rest framework. This helps in monitoring the application on a granular level.
+# You can customize which part of the application you want to monitor. Through this you can monitor a REST API
 
 
  ## Installation
 
-Install with:
+# Install with:
 
-pip3 install prometheus-python
+#### pip3 install prometheus-python
 
 
 # Used docker-compose to build the images, must be built in advance, or docker-compose will build them.
@@ -50,7 +50,7 @@ pip3 install prometheus-python
 # docker build -t apps:latest .
 or use
 
-docker-compose build
+#####docker-compose build
 # Then Run it.
 
 # docker-compose up
